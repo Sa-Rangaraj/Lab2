@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="110 Lab2 Part.1">
+    <title>Pancake Recipe</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+  </head>
+  <body>
+    <header>
+        <h1>Meeting Minutes</h1>
+    </header>
+    <main>
+      <h2>Lab 2 Html Practice</h2>
+      <h4>Date: 4/14/26</h4>
+      <h3>Attendance </h3>
+        <li><input type="checkbox" checked="checked" />Alice</li>
+        <li><input type="checkbox" />Bob</li>
+        <li><input type="checkbox" />Mallory</li>
+
+      <hr /> 
+
+      <h2>Agenda </h2>
+      <nav> 
+        <ol>
+          <li><a href="#T1"> <b>Really Important Task</b> </a>  we did not get to last time <em>MUST FINISH TODAY</em> </li>
+          <li><a href="#T2">Less Tmportant Task</a> from last meeting</li>
+          <li>New <a href="#T3">Medium Importance Task</a></li> 
+          <li>Questions and Concerns</li>
+          <li>Unimportant task <i>(if we have extra time)</i></li>
+        </ol>
+      </nav>
+
+      <hr /> 
+
+      <section>
+        <div> 
+        <h2>Meeting Notes:</h2>
+
+        <h3 id="T1">Really Important Task:</h3>
+        <details>
+          <summary>Important decision recap</summary>
+          <p>
+            A summary of the decisions made this really important task. <br /> 
+            A consice explanation of the rational. <br />
+            Current predictions regarding how this decision will effectt other parts of the project.
+          </p>
+        </details>
+
+        <h3 id="T2">Less Important Task:</h3>
+        <ul>
+          <li>Comment made about task</li>
+          <li>Something important to note</li>
+          <li>Some decision that was made</li>
+          <li>A <span style="color: red;">concern</span> that was raised</li>
+        </ul>
+
+
+        <h3 id="T3">New Task:</h3>
+        <img
+          src="https://www.agilenative.com/wp-content/uploads/2017/01/001-Agile-Hello-World.png"
+          alt="diagram"
+          width="250"
+        />
+        <figcaption>Presented Diagram</figcaption>
+          
+      </div>
+      </section>
+
+      <hr /> 
+      
+      <h2>Meeting Recordings</h2>
+      <audio controls>
+        <source src="Audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+      <video width="320" height="240" controls>
+        <source src="Video.mp4" type="video/mp4">
+      </video>
+  
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <hr />
+    <footer>
+      <h3>Meeting Feedback</h3>
+
+      <form> 
+        <fieldset>
+          <label for="name">Name?</label>
+          <input list="names" name="name" id="name">
+          <datalist id="names">
+            <option value="Alice">
+            <option value="Bob">
+            <option value="Mallory">
+          </datalist>          
+
+          <br />
+          <label>Date:</label>
+          <input type="date" id="day" value="day">
+
+          <br /> 
+          <br /> 
+
+          <label>How did this meeting go?</label><br />
+          <input type="radio" id="Good" name="meetingWent" value="Good">
+          <label for="Good">Good</label><br>
+          <input type="radio" id="Okay" name="meetingWent" value="Okay">
+          <label for="Okay">Okay</label><br>
+          <input type="radio" id="Bad" name="meetingWent" value="Bad">
+          <label for="Bad">Bad</label> 
+          <br />
+          <input type="checkbox" id="prod" name="meetingWent" value="Productive">
+          <label for="prof">Productive</label>
+          <br />
+          <input type="text" id="other" name="meetingWent" value="Other">
+
+          <br />
+          <br />
+          <label for="sched">When are you free for the next meeting?</label>
+          <select name="sched" id="sched">
+            <option value="mon">Monday</option>
+            <option value="tue">Tuesday</option>
+            <option value="wed">Wednesday</option>
+          </select>
+
+          <br />
+          <br />
+          <label for="review">Topics for next meeting?</label>
+          <br />
+          <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+          <br />
+          <br />
+          <button type="button">Submit!</button>
+
+
+
+        </fieldset>
+      </form>
+
+    </footer>
+  </body>
+</html>
